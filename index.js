@@ -75,7 +75,6 @@ async function run() {
         }
       }
 
-
       const result = await productCollection.updateOne(filter, Product, options)
       res.send(result);
 
