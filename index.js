@@ -51,7 +51,6 @@ async function run() {
       const result = await productCollection.findOne(query);
       res.send(result);
     })
- 
 
     app.post('/product', async(req, res) => {
       const newProduct = req.body;
